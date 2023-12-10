@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MongoDB CRUD App</h1>
+        
+        <form id="taskForm">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" required>
+
+            <label for="activite">Activité:</label>
+            <input type="text" id="activite" required>
+
+            <label for="task">Task:</label>
+            <input type="text" id="task" required>
+
+            <label for="dateDebut">Date Début:</label>
+            <input type="text" id="dateDebut" placeholder="YYYY-MM-DD" required>
+
+            <label for="dateFin">Date Fin:</label>
+            <input type="text" id="dateFin" placeholder="YYYY-MM-DD" required>
+
+            <button type="button" onclick="ajouter()">Ajouter</button>
+        </form>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
